@@ -6,6 +6,6 @@ import oci_setup as ocis
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'username': ocis.user.name}
+    user = {'username':'kevin'}
     return render_template('index.html', title='Home', user=user)
 

@@ -1,5 +1,7 @@
 import oci
-"""This is a docstring example"""
+"""This is a doc string test"""
+
+
 def print_resources():
     """This is is an example docstring"""
     config = oci.config.from_file("~/dev/ocicu/.oci/config", "DEFAULT")
