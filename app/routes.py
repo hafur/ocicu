@@ -9,4 +9,3 @@ def index():
     user = {'username': ocis.user.name}
     return render_template('index.html', title='Home', user=user)
 
-
