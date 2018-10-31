@@ -15,12 +15,10 @@
 		<br>
 
 		<tbody>
-			{% i = 0 %}
-			{% for service in list_services %}
+			{% for service in list_all %}
 				<tr>
-					<td>{{list_services[service][i]}}</td>
+					<td>{{list_all[service]}}</td>
 				</tr>
-			{% i += 1 %}
 			{% endfor %}
 		</tbody>
 

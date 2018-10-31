@@ -12,10 +12,8 @@ def print_resources():
     data = resources.data
     #print(resources.data)
     list_services = []
-    i = 0
+    
     for key in data:
-        print (i)
-        
         list_services.append(key.name)
         #if key.name == 'AutonomousDataWarehouse':
          #   list_services.append(key.fields[1])    
@@ -23,9 +21,10 @@ def print_resources():
 
     #print(list_services)
 
-    for service, j in enumerate(list_services):
-        list_all.append(service[j])
+    list_all = []
+    for service in list_services:
+        list_all.append(service)
 
-    print(len(list_services))
-    return list_services
+    #    print(list_all)
+    return list_all
 
